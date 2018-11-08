@@ -1,0 +1,19 @@
+td{
+    border: 1px black solid
+}
+
+td.tjockgrå{
+    background-color: grey;
+}
+td.grå{
+    background-color: darkgrey;
+}
+td.ljusgrå{
+    background-color: #e1dae8;
+}
+input[type=text]{
+    background-color: #e1dae8;
+}
+input{
+    width: 75px
+}
