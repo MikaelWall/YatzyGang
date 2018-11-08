@@ -1,125 +1,132 @@
 <!DOCTYPE html>
 <html>
-<head><h1>Yatzy</h1></head>
-    <meta charset="UTF-8">  
+
+<head>
+    <link href="StyleSheetYatzyForm.css" rel="stylesheet">
+    <h1>Yatzy</h1>
+</head>
+<meta charset="UTF-8">
+
 <body>
     <form method="post">
-        <table>
-           <tr>
-        <td><strong>Name:</strong></td>
-        <td><input type="text" id="name" placeholder="Skriv Namn"></td>
-        <td> <input type="text" id="name" placeholder="Skriv Namn"></td>
-        <td><input type="text" id="name" placeholder="Skriv Namn"></td>
-        <td><input type="text" id="name" placeholder="Skriv Namn"></td>
-    </tr>
-    
-    
-        <tr>
-        <td>Ones: </td>
-        <td><input type="number" min="0" max="5" step="1"></td>
-        <td><input type="number" min="0" max="5" step="1"></td>
-        <td><input type="number" min="0" max="5" step="1"></td>
-        <td><input type="number" min="0" max="5" step="1"></td>
-    </tr>
-    <tr>
-        <td>Twos:</td>
-        <td><input type="number" min="0" max="10" step="2"></td>
-        <td><input type="number" min="0" max="10" step="2"></td>
-        <td><input type="number" min="0" max="10" step="2"></td>
-        <td><input type="number" min="0" max="10" step="2"></td>
-    </tr>
-    <tr>
-    <td>Threes:</td>
-        <td><input type="number" min="0" max="15" step="3"></td>
-        <td><input type="number" min="0" max="15" step="3"></td>
-        <td><input type="number" min="0" max="15" step="3"></td>
-        <td><input type="number" min="0" max="15" step="3"></td>
-    </tr>
-    <tr>
-    <td>Fours:</td>
-        <td><input type="number" min="0" max="20" step="4"></td>
-        <td><input type="number" min="0" max="20" step="4"></td>
-        <td><input type="number" min="0" max="20" step="4"></td>
-        <td><input type="number" min="0" max="20" step="4"></td>
-    </tr>
-    <tr>
-    <td>Fives:</td>
-        <td><input type="number" min="0" max="25" step="5"></td>
-        <td><input type="number" min="0" max="25" step="5"></td>
-        <td><input type="number" min="0" max="25" step="5"></td>
-        <td><input type="number" min="0" max="25" step="5"></td>
-    </tr>
-    <tr>
-    <td>Sixes:</td>
-        <td><input type="number" min="0" max="30" step="6"></td>
-        <td><input type="number" min="0" max="30" step="6"></td>
-        <td><input type="number" min="0" max="30" step="6"></td>
-        <td><input type="number" min="0" max="30" step="6"></td>
-    </tr>
-    <tr>
-        <td><strong>Sum:</strong></td>
-        <td><input type="number" min="0" max="105" step="1"></td>
-        <td><input type="number" min="0" max="105" step="1"></td>
-        <td><input type="number" min="0" max="105" step="1"></td>
-        <td><input type="number" min="0" max="105" step="1"></td>
-    </tr>
-    <tr>
-            <td><strong>Bonus:</strong></td>
-            <td><input type="number" min="0" max="50" step="50"></td>
-            <td><input type="number" min="0" max="50" step="50"></td>
-            <td><input type="number" min="0" max="50" step="50"></td>
-            <td><input type="number" min="0" max="50" step="50"></td>
-        </tr>
-    <tr>
-     <td>Pair:</td>
-        <td><input type="number" min="0" max="12" step="1"></td>
-        <td><input type="number" min="0" max="12" step="1"></td>
-        <td><input type="number" min="0" max="12" step="1"></td>
-        <td><input type="number" min="0" max="12" step="1"></td>
-    </tr>
-    <tr>    
-    <td>Two Pairs:</td>
-    <td><input type="number" min="0" max="24" step="1"></td>
-    <td><input type="number" min="0" max="24" step="1"></td>
-    <td><input type="number" min="0" max="24" step="1"></td>
-    <td><input type="number" min="0" max="24" step="1"></td>
-    </tr>
-     <tr>    
-    <td>Two Pairs:</td>
-    <td><input type="number" min="0" max="22" step="1"></td>
-    <td><input type="number" min="0" max="22" step="1"></td>
-    <td><input type="number" min="0" max="22" step="1"></td>
-    <td><input type="number" min="0" max="22" step="1"></td>
-    </tr>
-    <tr>
-        <td>Three of a kind:</td>
-            <td><input type="number" min="0" max="18" step="1"></td>
-            <td><input type="number" min="0" max="18" step="1"></td>
-            <td><input type="number" min="0" max="18" step="1"></td>
-            <td><input type="number" min="0" max="18" step="1"></td>
-        </tr>
-    <tr>
-        <td>Four of a kind:</td>
-        <td><input type="number" min="0" max="24" step="1"></td>
-        <td><input type="number" min="0" max="24" step="1"></td>
-        <td><input type="number" min="0" max="24" step="1"></td>
-        <td><input type="number" min="0" max="24" step="1"></td>
-    </tr>
-    <tr>
-        <td>Small Straight:</td>
-            <td><input type="number" min="0" max="15" step="15"></td>
-            <td><input type="number" min="0" max="15" step="15"></td>
-            <td><input type="number" min="0" max="15" step="15"></td>
-            <td><input type="number" min="0" max="15" step="15"></td>
-    </tr>
-    <tr>
-            <td>Large Straight:</td>
-            <td><input type="number" min="0" max="20" step="20"></td>
-            <td><input type="number" min="0" max="20" step="20"></td>
-            <td><input type="number" min="0" max="20" step="20"></td>
-            <td><input type="number" min="0" max="20" step="20"></td>
-        </tr>
-        <tr>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Dice.svg/2000px-Dice.svg.png" class="center resize"
+            alt="Avatar">
+        <table class="center">
+            <tr id="grey">
+                <td class="bold">Name:</td>
+                <td><input type="text" id="grey" placeholder="Player 1"></td>
+                <td><input type="text" id="grey" placeholder="Player 2"></td>
+                <td><input type="text" id="grey" placeholder="Player 3"></td>
+                <td><input type="text" id="grey" placeholder="Player 4"></td>
+            </tr>
+
+
+            <tr>
+                <td>Ones: </td>
+                <td><input type="number" min="0" max="5" step="1"></td>
+                <td><input type="number" min="0" max="5" step="1"></td>
+                <td><input type="number" min="0" max="5" step="1"></td>
+                <td><input type="number" min="0" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>Twos:</td>
+                <td><input type="number" min="0" max="10" step="2"></td>
+                <td><input type="number" min="0" max="10" step="2"></td>
+                <td><input type="number" min="0" max="10" step="2"></td>
+                <td><input type="number" min="0" max="10" step="2"></td>
+            </tr>
+            <tr>
+                <td>Threes:</td>
+                <td><input type="number" min="0" max="15" step="3"></td>
+                <td><input type="number" min="0" max="15" step="3"></td>
+                <td><input type="number" min="0" max="15" step="3"></td>
+                <td><input type="number" min="0" max="15" step="3"></td>
+            </tr>
+            <tr>
+                <td>Fours:</td>
+                <td><input type="number" min="0" max="20" step="4"></td>
+                <td><input type="number" min="0" max="20" step="4"></td>
+                <td><input type="number" min="0" max="20" step="4"></td>
+                <td><input type="number" min="0" max="20" step="4"></td>
+            </tr>
+            <tr>
+                <td>Fives:</td>
+                <td><input type="number" min="0" max="25" step="5"></td>
+                <td><input type="number" min="0" max="25" step="5"></td>
+                <td><input type="number" min="0" max="25" step="5"></td>
+                <td><input type="number" min="0" max="25" step="5"></td>
+            </tr>
+            <tr>
+                <td>Sixes:</td>
+                <td><input type="number" min="0" max="30" step="6"></td>
+                <td><input type="number" min="0" max="30" step="6"></td>
+                <td><input type="number" min="0" max="30" step="6"></td>
+                <td><input type="number" min="0" max="30" step="6"></td>
+            </tr>
+            <tr id="grey">
+                <td class="bold">Sum:</td>
+                <td><input type="number" id="grey" min="0" max="105" step="1"></td>
+                <td><input type="number" id="grey" min="0" max="105" step="1"></td>
+                <td><input type="number" id="grey" min="0" max="105" step="1"></td>
+                <td><input type="number" id="grey" min="0" max="105" step="1"></td>
+            </tr>
+            <tr id="grey">
+                <td class="bold">Bonus:</td>
+                <td><input type="number" id="grey" min="0" max="50" step="50"></td>
+                <td><input type="number" id="grey" min="0" max="50" step="50"></td>
+                <td><input type="number" id="grey" min="0" max="50" step="50"></td>
+                <td><input type="number" id="grey" min="0" max="50" step="50"></td>
+            </tr>
+            <tr>
+                <td>Pair:</td>
+                <td><input type="number" min="2" max="12" step="1"></td>
+                <td><input type="number" min="2" max="12" step="1"></td>
+                <td><input type="number" min="2" max="12" step="1"></td>
+                <td><input type="number" min="2" max="12" step="1"></td>
+            </tr>
+            <tr>
+                <td>Two Pairs:</td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+            </tr>
+            <tr>
+                <td>Two Pairs:</td>
+                <td><input type="number" min="0" max="22" step="1"></td>
+                <td><input type="number" min="0" max="22" step="1"></td>
+                <td><input type="number" min="0" max="22" step="1"></td>
+                <td><input type="number" min="0" max="22" step="1"></td>
+            </tr>
+            <tr>
+                <td>Three of a kind:</td>
+                <td><input type="number" min="0" max="18" step="1"></td>
+                <td><input type="number" min="0" max="18" step="1"></td>
+                <td><input type="number" min="0" max="18" step="1"></td>
+                <td><input type="number" min="0" max="18" step="1"></td>
+            </tr>
+            <tr>
+                <td>Four of a kind:</td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+                <td><input type="number" min="0" max="24" step="1"></td>
+            </tr>
+            <tr>
+                <td>Small Straight:</td>
+                <td><input type="number" min="0" max="15" step="15"></td>
+                <td><input type="number" min="0" max="15" step="15"></td>
+                <td><input type="number" min="0" max="15" step="15"></td>
+                <td><input type="number" min="0" max="15" step="15"></td>
+            </tr>
+            <tr>
+                <td>Large Straight:</td>
+                <td><input type="number" min="0" max="20" step="20"></td>
+                <td><input type="number" min="0" max="20" step="20"></td>
+                <td><input type="number" min="0" max="20" step="20"></td>
+                <td><input type="number" min="0" max="20" step="20"></td>
+            </tr>
+            <tr>
                 <td>Full House:</td>
                 <td><input type="number" min="0" max="28" step="1"></td>
                 <td><input type="number" min="0" max="28" step="1"></td>
@@ -127,36 +134,52 @@
                 <td><input type="number" min="0" max="28" step="1"></td>
             </tr>
             <tr>
-                    <td>Chance:</td>
-                    <td><input type="number" min="0" max="30" step="1"></td>
-                    <td><input type="number" min="0" max="30" step="1"></td>
-                    <td><input type="number" min="0" max="30" step="1"></td>
-                    <td><input type="number" min="0" max="30" step="1"></td>
-                </tr>
-                <tr>
-                        <td>Yatzy:</td>
-                        <td><input type="number" min="0" max="50" step="50"></td>
-                        <td><input type="number" min="0" max="50" step="50"></td>
-                        <td><input type="number" min="0" max="50" step="50"></td>
-                        <td><input type="number" min="0" max="50" step="50"></td>
-                    </tr>
-                    <tr>
-                            <td><strong>Total:</strong></td>
-                            <td><input type="number" min="0" max="374" step="1"></td>
-                            <td><input type="number" min="0" max="374" step="1"></td>
-                            <td><input type="number" min="0" max="374" step="1"></td>
-                            <td><input type="number" min="0" max="374" step="1"></td>
-                        </tr>
-        
+                <td>Chance:</td>
+                <td><input type="number" min="0" max="30" step="1"></td>
+                <td><input type="number" min="0" max="30" step="1"></td>
+                <td><input type="number" min="0" max="30" step="1"></td>
+                <td><input type="number" min="0" max="30" step="1"></td>
+            </tr>
+            <tr>
+                <td>Yatzy:</td>
+                <td><input type="number" min="0" max="50" step="50"></td>
+                <td><input type="number" min="0" max="50" step="50"></td>
+                <td><input type="number" min="0" max="50" step="50"></td>
+                <td><input type="number" min="0" max="50" step="50"></td>
+            </tr>
+            <tr id="grey">
+                <td class="bold">Total:</td>
+                <td><input type="number" id="grey" min="0" max="374" step="1"></td>
+                <td><input type="number" id="grey" min="0" max="374" step="1"></td>
+                <td><input type="number" id="grey" min="0" max="374" step="1"></td>
+                <td><input type="number" id="grey" min="0" max="374" step="1"></td>
+            </tr>
 
-    
-        
-    </table>
+
+
+
+
+
+        </table>
 
     </form>
-    
-    <a href="YatzyKing.html">Back</a>
 
     
+    <head>
+        <title>Dice Simulator 2015</title>
+        <link rel="stylesheet" href="diceRollStyle.css">
+    </head>  
+    <body>
+      <p id="placeholder">
+      
+      </p>
+      <button id="button">Roll Dice</button>
+      <script src="StyleSheetYatzyForm.css"></script>
+      <script src="diceRoller.js"></script>
+
+      <br><br><br>
+      <a href="YatzyKing.html">Back</a>
+
 </body>
+
 </html>
