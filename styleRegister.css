@@ -1,6 +1,8 @@
 
 img{
-    animation: 3s slidein 1 alternate 
+    width: 150px;
+    height: 150px;
+    animation: 3s slidein 1 alternate;
 }
 p{
     animation: 6s slidein 1 alternate
