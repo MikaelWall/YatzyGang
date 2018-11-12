@@ -24,3 +24,16 @@
   #button:hover{
     background-color: brown;
   }
+  .profiles {
+  width: 200px;
+  height: 200px;
+  margin: 1em;
+  border-color: black;
+  border-style: groove;
+  border-width: 5px;
+  }
+  .centerprofile {
+    margin: auto;
+    width: auto;
+    border: none;
+  }
