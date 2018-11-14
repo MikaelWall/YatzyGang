@@ -37,3 +37,17 @@
     width: auto;
     border: none;
   }
+  #button2:hover{
+    background-color: rgb(172, 132, 132);
+  }
+  #button2 {
+    background-color: rgb(82, 186, 117);
+    border-radius: 6px;
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-transform: uppercase;
+    width: 200px;
+    cursor: pointer;
+    
+  }
