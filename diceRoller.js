@@ -21,3 +21,9 @@ document.addEventListener("DOMContentLoaded", function(e){
         printNumber(result);
     };
 });
+
+var valueP1_1 = document.getElementById("player1_ones"); //skapa variabel som tar ut värdet från P1 ettor
+valueP1_1.addEventListener("change", updateValue); //händer när eventet "change" alltså när vi ändrar i inputen
+function updateValue() {
+    document.getElementById("totalvalue").totalvalue += valueP1_1; 
+} // funktionen som adderar allting

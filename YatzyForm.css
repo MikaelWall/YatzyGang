@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+}
+
+a {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+   
+}
+
+a:hover {
+    background-color: rgb(226, 213, 213);
+}
+
+input {
+    border: 1px solid rgb(126, 115, 115);
+    
+}
+
+img {
+    border: 5px solid rgb(126, 115, 115);
+    border-radius: 10px;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
