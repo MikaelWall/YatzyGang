@@ -22,23 +22,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     userProfile.push(playerB);
 
-    var totalPoints = [];
-
-    /* let btn = document.getElementById("calcSum");
- 
-     function updateValue(event) {
-         var totalValue = parseInt(document.getElementById("player1_ones").value);
-         document.getElementById("player1:_totalSum").value = totalValue;
-     }
- 
-     btn.addEventListener("click", updateValue);*/
-
     var valueP1_1 = document.getElementById("player1_ones");
     var valueP1_2 = document.getElementById("player1_twos");
     var valueP1_3 = document.getElementById("player1_threes");
     var valueP1_4 = document.getElementById("player1_fours");
     var valueP1_5 = document.getElementById("player1_fives");
     var valueP1_6 = document.getElementById("player1_sixes");
+    var valueP1_1p = document.getElementById("player1_pair");
+    var valueP1_2p = document.getElementById("player1_2pair");
+    var valueP1_3p = document.getElementById("player1_3OfKind");
+    var valueP1_4p = document.getElementById("player1_4OfKind");
+    var valueP1_sS = document.getElementById("player1_smallStraight");
+    var valueP1_lS = document.getElementById("player1_largeStraight");
+    var valueP1_fH = document.getElementById("player1_fullHouse");
+    var valueP1_ch = document.getElementById("player1_chance");
+    var valueP1_yatzy = document.getElementById("player1_yatzy");
 
     var valueP2_1 = document.getElementById("player2_ones");
     var valueP2_2 = document.getElementById("player2_twos");
@@ -69,6 +67,15 @@ document.addEventListener("DOMContentLoaded", function (event) {
     valueP1_4.addEventListener("change", updateValue1);
     valueP1_5.addEventListener("change", updateValue1);
     valueP1_6.addEventListener("change", updateValue1);
+    valueP1_1p.addEventListener("change", updateValue1);
+    valueP1_2p.addEventListener("change", updateValue1);
+    valueP1_3p.addEventListener("change", updateValue1);
+    valueP1_4p.addEventListener("change", updateValue1);
+    valueP1_sS.addEventListener("change", updateValue1);
+    valueP1_lS.addEventListener("change", updateValue1);
+    valueP1_fH.addEventListener("change", updateValue1);
+    valueP1_ch.addEventListener("change", updateValue1);
+    valueP1_yatzy.addEventListener("change", updateValue1);
 
     //Player 2
     valueP2_1.addEventListener("change", updateValue2);
@@ -105,8 +112,21 @@ document.addEventListener("DOMContentLoaded", function (event) {
         sum1 += parseInt(valueP1_6.value);
         document.getElementById("player1_bonussum").value = sum1;
         if (sum1 >= 63){
+            sum1 += 50;
         document.getElementById("player1_bonus").value = 50;
         }
+        if(sum1 < 63){
+            document.getElementById("player1_bonus").value = 0;
+        }
+        sum1 += parseInt(valueP1_1p.value);
+        sum1 += parseInt(valueP1_2p.value);
+        sum1 += parseInt(valueP1_3p.value);
+        sum1 += parseInt(valueP1_4p.value);
+        sum1 += parseInt(valueP1_sS.value);
+        sum1 += parseInt(valueP1_lS.value);
+        sum1 += parseInt(valueP1_ch.value);
+        sum1 += parseInt(valueP1_yatzy.value);
+        document.getElementById("player1_totalsum").value = sum1;
     }
 
     function updateValue2() {
