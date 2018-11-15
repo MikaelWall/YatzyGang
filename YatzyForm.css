@@ -18,10 +18,11 @@ input {
     
 }
 
-img {
+/*img {
     border: 5px solid rgb(126, 115, 115);
     border-radius: 10px;
-}
+}*/
+
 
 h1 {
     font-family: Arial, Helvetica, sans-serif;
