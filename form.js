@@ -22,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
     userProfile.push(playerB);
 
+        //Player 1
     var valueP1_1 = document.getElementById("player1_ones");
     var valueP1_2 = document.getElementById("player1_twos");
     var valueP1_3 = document.getElementById("player1_threes");
@@ -38,6 +39,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var valueP1_ch = document.getElementById("player1_chance");
     var valueP1_yatzy = document.getElementById("player1_yatzy");
 
+        //Player 2
     var valueP2_1 = document.getElementById("player2_ones");
     var valueP2_2 = document.getElementById("player2_twos");
     var valueP2_3 = document.getElementById("player2_threes");
@@ -54,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var valueP2_ch = document.getElementById("player2_chance");
     var valueP2_yatzy = document.getElementById("player2_yatzy");
 
-
+        //Player 3
     var valueP3_1 = document.getElementById("player3_ones");
     var valueP3_2 = document.getElementById("player3_twos");
     var valueP3_3 = document.getElementById("player3_threes");
@@ -71,6 +73,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var valueP3_ch = document.getElementById("player3_chance");
     var valueP3_yatzy = document.getElementById("player3_yatzy");
 
+        //Player 4
     var valueP4_1 = document.getElementById("player4_ones");
     var valueP4_2 = document.getElementById("player4_twos");
     var valueP4_3 = document.getElementById("player4_threes");
@@ -87,7 +90,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
     var valueP4_ch = document.getElementById("player4_chance");
     var valueP4_yatzy = document.getElementById("player4_yatzy");
 
-    console.log(valueP1_1);
     //Player 1
     valueP1_1.addEventListener("change", updateValue1);
     valueP1_2.addEventListener("change", updateValue1);
@@ -270,5 +272,29 @@ document.addEventListener("DOMContentLoaded", function (event) {
         document.getElementById("player4_totalSum").value = sum4;
 
     }
+    document.getElementById("winner").addEventListener("click", function (event) {
+        event.preventDefault();
+
+        let winner_name = "";
+        let winner_score = 0;
+
+        for (let i = 1; i <= 4; i++) {
+            let score = document.getElementById("player" + i + "_totalSum").value;
+            if (score === "") {
+                score = 0;
+            }
+
+            score = parseInt(score);
+            if (score > winner_score) {
+                winner_name = "Player " + i;
+                winner_score = score;
+            }
+
+            else if(score === winner_score){
+                winner_name = winner_name + " & " + "Player " + i;
+            }
+        }
+        alert("Vinnare: " + winner_name + " (" + winner_score + " Poäng)");
+    });
 
 });
