@@ -7,6 +7,8 @@
         "width=device-width, initial-scale=1.0">
     <title>Game on!</title>
     <link href="StyleSheetYatzyForm.css" rel="stylesheet">
+    <link href="diceRollStyle.css" rel="stylesheet">
+
     <h1>Yatzy</h1>
 </head>
 <meta charset="UTF-8">
@@ -27,17 +29,10 @@
 
             <tr>
                 <td>Ones: </td>
-<<<<<<< HEAD
                 <td><input id="player1_ones" type="number" min="0" max="5" step="1"></td>
                 <td><input type="number" min="0" max="5" step="1"></td>
                 <td><input type="number" min="0" max="5" step="1"></td>
                 <td><input type="number" min="0" max="5" step="1"></td>
-=======
-                <td><input id="player1_ones" type="number" min="0" max="5" step="1" value="0"></td>
-                <td><input id="player2_ones"  type="number" min="0" max="5" step="1" value="0"></td>
-                <td><input id="player3_ones"  type="number" min="0" max="5" step="1" value="0"></td>
-                <td><input id="player4_ones"  type="number" min="0" max="5" step="1" value="0"></td>
->>>>>>> f0082b0c92d6a253c04c62bf6508070be0cf6767
             </tr>
             <tr>
                 <td>Twos:</td>
@@ -153,20 +148,13 @@
             </tr>
             <tr>
                 <td class="bold">Total:</td>
-<<<<<<< HEAD
                 <td><input type="number" id="totalvalue" min="0" max="374" step="1"></td>
                 <td><input type="number" id="grey" min="0" max="374" step="1"></td>
                 <td><input type="number" id="grey" min="0" max="374" step="1"></td>
                 <td><input type="number" id="grey" min="0" max="374" step="1"></td>
-=======
-                <td><input id="player1_totalSum"  type="number" class="grey" min="0" max="374" step="1"></td>
-                <td><input type="number" class="grey" min="0" max="374" step="1"></td>
-                <td><input type="number" class="grey" min="0" max="374" step="1"></td>
-                <td><input type="number" class="grey" min="0" max="374" step="1"></td>
->>>>>>> f0082b0c92d6a253c04c62bf6508070be0cf6767
             </tr>
 
-
+                
 
 
 
@@ -174,19 +162,30 @@
         </table>
 
     </form>
-
-    <head>
-
-        <link rel="stylesheet" href="diceRollStyle.css">
-    </head>
-
-    <body>
-        <p id="placeholder">
-
-        </p>
+    <div class="flex-container">
+            <p id="placeholder">
+                
+            </p>
+            
+            <p id="placeholder2">
+    
+            </p>
+            <p id="placeholder3">
+    
+            </p>
+            <p id="placeholder4">
+    
+            </p>
+            <p id="placeholder5">
+    
+            </p>
+            <br>
+            
+    
+    
+        </div>  
         <button id="button">Roll Dice</button>
-        <script src="diceRollStyle.css"></script>
-        <script src="diceRoller.js"></script>
+        
         <br><br>
         <button id="button2"><a href="YatzyKing.html">Back</a></button>
         <br><br><br>
@@ -203,8 +202,11 @@
 
             </div>
         <br><br>
-
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
         <script src="form.js"></script>
+       
+        
+        <script src="diceRoller.js"></script>
     </body>
 
 </html>

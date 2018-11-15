@@ -13,13 +13,49 @@
     cursor: pointer;
   }
   #placeholder {
-    height: 100px;
-    width: 100px;
-    padding: 50px;
-    margin: 50px auto;
+    height: 50px;
+    width: 40px;
+    padding: 40px;
+    margin: 10px 10px;
     border: 1px solid gray;
     border-radius: 10px;  
-    font-size:80px;
+    font-size:40px;
+  }
+  #placeholder2 {
+    height: 50px;
+    width: 40px;
+    padding: 40px;
+    margin: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;  
+    font-size:40px;
+  }
+  #placeholder3 {
+    height: 50px;
+    width: 40px;
+    padding: 40px;
+    margin: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;  
+    font-size:40px;
+  }
+  #placeholder4 {
+    height: 50px;
+    width: 40px;
+    padding: 40px;
+    margin: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;  
+    font-size:40px;
+  }
+  #placeholder5 {
+    height: 50px;
+    width: 40px;
+    padding: 40px;
+    margin: 10px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;  
+    font-size:40px;
   }
   #button:hover{
     background-color: brown;
@@ -50,4 +86,23 @@
     width: 200px;
     cursor: pointer;
     
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+  }
+
+  div {
+    text-align: center;
+  }
+
+  .center-screen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
   }
