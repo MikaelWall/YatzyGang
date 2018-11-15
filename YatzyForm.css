@@ -18,6 +18,12 @@ input {
     
 }
 
+img{
+    width: 10px;
+    height: 10px;
+}
+
+
 /*img {
     border: 5px solid rgb(126, 115, 115);
     border-radius: 10px;

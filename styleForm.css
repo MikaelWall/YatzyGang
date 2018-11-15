@@ -17,3 +17,7 @@ input[type=text]{
 input{
     width: 75px
 }
+img{
+    width: 10px;
+    height: 10px;
+}

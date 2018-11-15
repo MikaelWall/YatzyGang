@@ -41,6 +41,11 @@ table.center {
   h1 {
       text-align: center
   }
+
+  img{
+      width: 100px;
+      height: 100px;
+  }
  
     img.center {
         display: block;
