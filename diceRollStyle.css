@@ -91,7 +91,7 @@
   .flex-container {
     display: flex;
     float: left;
-    margin-left: 380px;
+    margin-left: 395px;
   }
 
   div {
@@ -105,4 +105,8 @@
     align-items: center;
     text-align: center;
     min-height: 100vh;
+  }
+
+  .boxes {
+    margin: 10px 30px;
   }
