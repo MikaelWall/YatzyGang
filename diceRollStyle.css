@@ -90,8 +90,8 @@
 
   .flex-container {
     display: flex;
-    flex-direction: row;
-    text-align: center;
+    float: left;
+    margin-left: 380px;
   }
 
   div {
